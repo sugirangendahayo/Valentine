@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="valley.css">
+</head>
+
+<body>
+  <div class="container">
+ <h2>Find your love percentage</h2>
+     <input type="text" id="inp1" placeholder="Enter your name" required>
+ <input type="text" id="inp2" placeholder="Enter your crush name" required><br>
+ <button class="btn" id="btn" onclick="myFunc()">Find</button>
+ <div class="myPara">
+   <p id="demo"></p>
+ </div>
+  </div>
+<script>
+function myFunc(){
+   const name1 = document.getElementById("inp1");
+  const valN1 = name1.value;
+  const name2 = document.getElementById("inp2");
+  const valN2 = name2.value;
+  const perce = Math.floor(Math.random()*100);
+  
+ if(valN1 == ""){
+  alert("Please fill the formmmmm");
+  document.getElementById("demo").innerHTML = "Fill that form";
+  return;
+}
+if(!valN1 == ""){
+  if (perce == 0 && perce < 30) {
+  
+  document.getElementById("demo").innerHTML = "Hello " + valN1 + " and " + valN2 + " Your love percentage is " + perce + " %" + "<br>  <hr> " + "Don't worry ,You still have the chance to love each other.";
+  
+}
+if (perce >= 30 && perce < 50) {
+  document.getElementById("demo").innerHTML = "Hi " + valN1 + " and " + valN2 + " Your love percentage is " + perce + " %" + "<br>  <hr> " + "Don't worry , this is the beginning,  and you may find challenges so face them.";
+}
+if (perce >= 50 && perce < 70) {
+  document.getElementById("demo").innerHTML = "Ohh it seems to be perfect dear " + valN1 + " and " + valN2 + " your love percentage is " + perce + " %" + "<br> <hr> May your love be strong enough"
+}
+if (perce >= 70 && perce <= 100) {
+  document.getElementById("demo").innerHTML = "Congratulations dear " + valN1 + " and " + valN2 + " your love percentage is " + perce + " %" + "<br> <hr>  You have found your soulmate , so prepare for a magic journey"
+}
+
+  
+} 
+
+if(valN2 == ""){
+  alert("Please fill the form");
+  document.getElementById("demo").innerHTML = "Fill that form";
+  return;
+}
+if(!valN2 == ""){
+  if(perce == 0 && perce < 30){
+    document.getElementById("demo").innerHTML = "Hello "+valN1 + " and " + valN2 + " Your love percentage is " + perce + " %" + "<br> <hr> " + "Don't worry ,You still have the chance to love each other.";
+  }
+  if(perce >= 30 && perce < 50){
+    document.getElementById("demo").innerHTML = "Hi "+valN1 + " and " + valN2 + " Your love percentage is " + perce + " %" + "<br> <hr> " + "Don't worry , this is the beginning,  and you may find challenges so face them.";
+}
+if(perce >= 50 && perce < 70){
+  document.getElementById("demo").innerHTML= "Ohh it seems to be perfect dear "+ valN1 + " and " + valN2 + " your love percentage is " + perce + " %" + "<br> <hr>  May your love be strong enough"
+}
+if(perce >= 70 && perce <= 100){
+  document.getElementById("demo").innerHTML= "Congratulations dear "+ valN1 + " and " + valN2 + " your love percentage is " + perce + " %" + "<br> <hr>  You have found your soulmate , so prepare for a magic journey"
+}
+
+}
+}
+
+</script>
+</body>
+
+</html>

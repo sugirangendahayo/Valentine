@@ -1,0 +1,38 @@
+.container{
+  width:250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  background: grey;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+  padding-bottom: 100px;
+}
+h2{
+  color: deeppink;
+  text-align: center;
+  font-size: 18px;
+}
+.container input{
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.btn{
+  padding: 10px;
+  width: 100px;
+  border: none;
+  background: hotpink;
+  color: white;
+  font-weight: bold;
+}
+.btn:hover{
+  background: white;
+  color: deeppink;
+  transition: 0.8s ease-in;
+}
+#demo{
+  text-align: center;
+  color: pink;
+  font-weight: bold;
+}
